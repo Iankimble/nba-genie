@@ -59,10 +59,10 @@ class PlayerForm extends Component {
             <div>
                 <form onSubmit={this.handleSubmit} >
                     <label>
-                        Player Name:
-            <input type="text" name='search' value={this.state.search} onChange={this.handleChange} />
-                    </label>
-                    <input type="submit" value="Submit" />
+                        Player Name:<br></br>
+            <input type="text" name='search' value={this.state.search} onChange={this.handleChange} style={{width:"275px"}} />
+                    </label><br></br>
+                    <input type="submit" value="Submit" style={{backgroundColor:"none", width:"275px", border:"none", margin:"10px", borderRadius:"25px", height:"50px"}}/>
                 </form>
                 <Results
                     playerName={this.state.playerName}
